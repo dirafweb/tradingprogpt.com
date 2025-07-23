@@ -26,6 +26,9 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="en" href="https://tradingprogpt.com/en" />
         <link rel="alternate" hrefLang="x-default" href="https://tradingprogpt.com" />
 
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="rHX8wKlluJ-AaLiDah-bu8hBSspBh2VJx7aX7Jm905Q" />
+
         {/* JSON-LD Schema */}
         <script
           type="application/ld+json"
