@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://tradingprogpt.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingprogpt.com/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingprogpt.com/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingprogpt.com/" />
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tradingprogpt.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingprogpt.com/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingprogpt.com/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingprogpt.com/" />
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tradingprogpt.com/es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tradingprogpt.com/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tradingprogpt.com/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tradingprogpt.com/" />
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tradingprogpt.com/en/privacy</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tradingprogpt.com/es/privacy</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tradingprogpt.com/en/cookies</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tradingprogpt.com/es/cookies</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tradingprogpt.com/en/terms</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tradingprogpt.com/es/terms</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
