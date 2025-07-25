@@ -10,6 +10,62 @@ export const metadata: Metadata = {
   title: "Trading Pro GPT - AI Trading Signals & Insights",
   description:
     "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, 360° analysis, and actionable strategies. Powered by Xentris.tech, OpenAI AI, and TwelveData.",
+  metadataBase: new URL("https://tradingprogpt.com"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://tradingprogpt.com",
+    title: "Trading Pro GPT - AI Trading Signals & Insights",
+    description:
+      "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, 360° analysis, and actionable strategies. Powered by Xentris.tech, OpenAI AI, and TwelveData.",
+    siteName: "Trading Pro GPT",
+    images: [
+      {
+        url: "/og-image-en.png",
+        width: 1200,
+        height: 630,
+        alt: "Trading Pro GPT - AI Trading Signals & Insights",
+        type: "image/jpeg",
+      },
+      {
+        url: "/og-image-square-en.png",
+        width: 1200,
+        height: 1200,
+        alt: "Trading Pro GPT - AI Trading Platform",
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tradingprogpt",
+    creator: "@xentristech",
+    title: "Trading Pro GPT - AI Trading Signals & Insights",
+    description:
+      "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 5 days free!",
+    images: [
+      {
+        url: "/twitter-image-en.png",
+        width: 1200,
+        height: 630,
+        alt: "Trading Pro GPT - AI Trading Signals & Insights",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "rHX8wKlluJ-AaLiDah-bu8hBSspBh2VJx7aX7Jm905Q",
+  },
     generator: 'v0.dev'
 }
 

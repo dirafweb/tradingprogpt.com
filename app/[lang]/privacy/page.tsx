@@ -1,4 +1,37 @@
+import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+  const { lang } = params
+
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url: `https://tradingprogpt.com/${lang}/privacy`,
+    name: lang === "es" ? "Política de Privacidad - Trading Pro GPT" : "Privacy Policy - Trading Pro GPT",
+    description:
+      lang === "es"
+        ? "Política de privacidad de Trading Pro GPT. Información sobre cómo recopilamos, usamos y protegemos tus datos personales."
+        : "Trading Pro GPT privacy policy. Information about how we collect, use, and protect your personal data.",
+    inLanguage: lang,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Trading Pro GPT",
+      url: "https://tradingprogpt.com",
+    },
+  }
+
+  return {
+    title: lang === "es" ? "Política de Privacidad - Trading Pro GPT" : "Privacy Policy - Trading Pro GPT",
+    description:
+      lang === "es"
+        ? "Política de privacidad de Trading Pro GPT. Información sobre cómo recopilamos, usamos y protegemos tus datos personales."
+        : "Trading Pro GPT privacy policy. Information about how we collect, use, and protect your personal data.",
+    other: {
+      "script:ld+json": JSON.stringify(webPageSchema),
+    },
+  }
+}
 
 export default function PrivacyPage({ params }: { params: { lang: string } }) {
   const content = {

@@ -1,4 +1,37 @@
+import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+  const { lang } = params
+
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url: `https://tradingprogpt.com/${lang}/terms`,
+    name: lang === "es" ? "Términos de Servicio - Trading Pro GPT" : "Terms of Service - Trading Pro GPT",
+    description:
+      lang === "es"
+        ? "Términos de servicio de Trading Pro GPT. Condiciones de uso de nuestra plataforma de trading con IA."
+        : "Trading Pro GPT terms of service. Terms and conditions for using our AI trading platform.",
+    inLanguage: lang,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Trading Pro GPT",
+      url: "https://tradingprogpt.com",
+    },
+  }
+
+  return {
+    title: lang === "es" ? "Términos de Servicio - Trading Pro GPT" : "Terms of Service - Trading Pro GPT",
+    description:
+      lang === "es"
+        ? "Términos de servicio de Trading Pro GPT. Condiciones de uso de nuestra plataforma de trading con IA."
+        : "Trading Pro GPT terms of service. Terms and conditions for using our AI trading platform.",
+    other: {
+      "script:ld+json": JSON.stringify(webPageSchema),
+    },
+  }
+}
 
 export default function TermsPage({ params }: { params: { lang: string } }) {
   const content = {

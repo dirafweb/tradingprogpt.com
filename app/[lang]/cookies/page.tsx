@@ -1,4 +1,37 @@
+import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+  const { lang } = params
+
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url: `https://tradingprogpt.com/${lang}/cookies`,
+    name: lang === "es" ? "Política de Cookies - Trading Pro GPT" : "Cookie Policy - Trading Pro GPT",
+    description:
+      lang === "es"
+        ? "Política de cookies de Trading Pro GPT. Información sobre cómo utilizamos las cookies en nuestro sitio web."
+        : "Trading Pro GPT cookie policy. Information about how we use cookies on our website.",
+    inLanguage: lang,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Trading Pro GPT",
+      url: "https://tradingprogpt.com",
+    },
+  }
+
+  return {
+    title: lang === "es" ? "Política de Cookies - Trading Pro GPT" : "Cookie Policy - Trading Pro GPT",
+    description:
+      lang === "es"
+        ? "Política de cookies de Trading Pro GPT. Información sobre cómo utilizamos las cookies en nuestro sitio web."
+        : "Trading Pro GPT cookie policy. Information about how we use cookies on our website.",
+    other: {
+      "script:ld+json": JSON.stringify(webPageSchema),
+    },
+  }
+}
 
 export default function CookiesPage({ params }: { params: { lang: string } }) {
   const content = {
