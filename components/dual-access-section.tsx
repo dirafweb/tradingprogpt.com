@@ -15,12 +15,12 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
       openaiPrice: "$20 USD/month",
       openaiDescription: "Your AI engine: speed, power and unlimited responses.",
       tradingTitle: "Trading Pro GPT",
-      tradingPrice: "$30 USD/month",
+      tradingPrice: "$50 USD/month",
       tradingDescription:
         "Your trading expert: personalized signals, real-time data, technical/fundamental analysis, adapted strategies and priority support.",
       resultTitle: "The result?",
       benefits: ["Safer decisions", "Less stress", "More clarity", "Optimal reaction time"],
-      totalPrice: "$50 USD/month",
+      totalPrice: "$70 USD/month",
       totalDescription: "Complete professional trading solution",
     },
     es: {
@@ -30,12 +30,12 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
       openaiPrice: "$20 USD/mes",
       openaiDescription: "Tu motor de IA: velocidad, potencia y respuestas ilimitadas.",
       tradingTitle: "Trading Pro GPT",
-      tradingPrice: "$30 USD/mes",
+      tradingPrice: "$50 USD/mes",
       tradingDescription:
         "Tu experto de trading: señales personalizadas, datos en tiempo real, análisis técnico/fundamental, estrategias adaptadas y soporte prioritario.",
       resultTitle: "¿El resultado?",
       benefits: ["Decisiones más seguras", "Menos estrés", "Más claridad", "Tiempo de reacción óptimo"],
-      totalPrice: "$50 USD/mes",
+      totalPrice: "$70 USD/mes",
       totalDescription: "Solución completa de trading profesional",
     },
   }

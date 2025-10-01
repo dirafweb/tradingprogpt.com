@@ -22,7 +22,7 @@ export function HowSubscriptionWorks({ lang }: HowSubscriptionWorksProps) {
         {
           number: "2",
           title: "Subscribe to Trading Pro GPT",
-          description: "All trading features, $30/month",
+          description: "All trading features, $50/month",
           icon: Target,
         },
         {
@@ -50,7 +50,7 @@ export function HowSubscriptionWorks({ lang }: HowSubscriptionWorksProps) {
         {
           number: "2",
           title: "Suscríbete a Trading Pro GPT",
-          description: "Todas las funciones de trading, $30/mes",
+          description: "Todas las funciones de trading, $50/mes",
           icon: Target,
         },
         {

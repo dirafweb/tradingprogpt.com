@@ -62,12 +62,12 @@ export default function PrivacyPage({ params }: { params: { lang: string } }) {
         {
           title: "Your Rights",
           content:
-            "You have the right to access, modify, or delete your personal data. Contact us at contacto@xentris.tech for any privacy-related requests.",
+            "You have the right to access, modify, or delete your personal data. Contact us at info@xentris.tech for any privacy-related requests.",
         },
         {
           title: "Contact Information",
           content:
-            "For privacy concerns or questions, contact us at contacto@xentris.tech. We are committed to protecting your privacy and will respond to all inquiries promptly.",
+            "For privacy concerns or questions, contact us at info@xentris.tech. We are committed to protecting your privacy and will respond to all inquiries promptly.",
         },
       ],
     },
@@ -98,12 +98,12 @@ export default function PrivacyPage({ params }: { params: { lang: string } }) {
         {
           title: "Tus Derechos",
           content:
-            "Tienes derecho a acceder, modificar o eliminar tus datos personales. Contáctanos en contacto@xentris.tech para cualquier solicitud relacionada con privacidad.",
+            "Tienes derecho a acceder, modificar o eliminar tus datos personales. Contáctanos en info@xentris.tech para cualquier solicitud relacionada con privacidad.",
         },
         {
           title: "Información de Contacto",
           content:
-            "Para preocupaciones o preguntas sobre privacidad, contáctanos en contacto@xentris.tech. Estamos comprometidos a proteger tu privacidad y responderemos a todas las consultas prontamente.",
+            "Para preocupaciones o preguntas sobre privacidad, contáctanos en info@xentris.tech. Estamos comprometidos a proteger tu privacidad y responderemos a todas las consultas prontamente.",
         },
       ],
     },

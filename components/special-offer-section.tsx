@@ -12,7 +12,7 @@ export function SpecialOfferSection({ lang }: SpecialOfferSectionProps) {
   const content = {
     en: {
       badge: "Limited Time Offer",
-      title: "Enjoy complete unlimited access for 5 days!",
+      title: "Enjoy complete unlimited access for 14 days!",
       subtitle: "Try all Trading Pro GPT features without restrictions.",
       description: "If you like it, continue with the Pro plan for unlimited access.",
       cta: "Start Free Trial",
@@ -20,7 +20,7 @@ export function SpecialOfferSection({ lang }: SpecialOfferSectionProps) {
     },
     es: {
       badge: "Oferta por Tiempo Limitado",
-      title: "¡Disfruta acceso completo sin límites durante 5 días!",
+      title: "¡Disfruta acceso completo sin límites durante 14 días!",
       subtitle: "Prueba todas las funciones de Trading Pro GPT sin restricciones.",
       description: "Si te gusta, continúa en el plan Pro con acceso ilimitado.",
       cta: "Comenzar Prueba Gratis",
@@ -84,7 +84,7 @@ export function SpecialOfferSection({ lang }: SpecialOfferSectionProps) {
             <div className="mt-6 flex items-center justify-center text-gray-400">
               <Clock className="h-4 w-4 mr-2" />
               <span className="text-sm">
-                5 {lang === "es" ? "días completos" : "full days"} •{" "}
+                14 {lang === "es" ? "días completos" : "full days"} •{" "}
                 {lang === "es" ? "Sin compromisos" : "No commitments"}
               </span>
             </div>

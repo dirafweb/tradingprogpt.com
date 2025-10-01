@@ -7,17 +7,17 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Trading Pro GPT - AI Trading Signals & Insights",
+  title: "Trading Pro GPT - AI Trading Signals & Insights | 14-Day Free Trial",
   description:
-    "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, 360° analysis, and actionable strategies. Powered by Xentris.tech, OpenAI AI, and TwelveData.",
+    "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, 360° analysis, and actionable strategies. Powered by Xentris.tech, OpenAI AI, and TwelveData. Try 14 days free!",
   metadataBase: new URL("https://tradingprogpt.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://tradingprogpt.com",
-    title: "Trading Pro GPT - AI Trading Signals & Insights",
+    title: "Trading Pro GPT - AI Trading Signals & Insights | 14-Day Free Trial",
     description:
-      "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, 360° analysis, and actionable strategies. Powered by Xentris.tech, OpenAI AI, and TwelveData.",
+      "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, 360° analysis, and actionable strategies. Powered by Xentris.tech, OpenAI AI, and TwelveData. Try 14 days free!",
     siteName: "Trading Pro GPT",
     images: [
       {
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@tradingprogpt",
     creator: "@xentristech",
-    title: "Trading Pro GPT - AI Trading Signals & Insights",
+    title: "Trading Pro GPT - AI Trading Signals & Insights | 14-Day Free Trial",
     description:
-      "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 5 days free!",
+      "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 14 days free!",
     images: [
       {
         url: "/twitter-image-en.png",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   verification: {
     google: "rHX8wKlluJ-AaLiDah-bu8hBSspBh2VJx7aX7Jm905Q",
   },
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

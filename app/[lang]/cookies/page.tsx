@@ -66,7 +66,7 @@ export default function CookiesPage({ params }: { params: { lang: string } }) {
         },
         {
           title: "Contact Us",
-          content: "If you have questions about our cookie policy, please contact us at contacto@xentris.tech.",
+          content: "If you have questions about our cookie policy, please contact us at info@xentris.tech.",
         },
       ],
     },
@@ -101,8 +101,7 @@ export default function CookiesPage({ params }: { params: { lang: string } }) {
         },
         {
           title: "Contáctanos",
-          content:
-            "Si tienes preguntas sobre nuestra política de cookies, por favor contáctanos en contacto@xentris.tech.",
+          content: "Si tienes preguntas sobre nuestra política de cookies, por favor contáctanos en info@xentris.tech.",
         },
       ],
     },

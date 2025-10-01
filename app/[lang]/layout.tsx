@@ -16,9 +16,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
   if (lang === "es") {
     return {
-      title: "Trading Pro GPT - Señales de Trading con IA | Prueba Gratis 5 Días",
+      title: "Trading Pro GPT - Señales de Trading con IA | Prueba Gratis 14 Días",
       description:
-        "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 5 días gratis! Por Xentris.tech, OpenAI Plus y TwelveData.",
+        "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 14 días gratis! Por Xentris.tech, OpenAI Plus y TwelveData.",
       alternates: {
         canonical: "https://tradingprogpt.com/es",
         languages: {
@@ -30,9 +30,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
         type: "website",
         locale: "es_ES",
         url: "https://tradingprogpt.com/es",
-        title: "Trading Pro GPT - Señales de Trading con IA | Prueba Gratis 5 Días",
+        title: "Trading Pro GPT - Señales de Trading con IA | Prueba Gratis 14 Días",
         description:
-          "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 5 días gratis!",
+          "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 14 días gratis!",
         siteName: "Trading Pro GPT",
         images: [
           {
@@ -55,9 +55,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
         card: "summary_large_image",
         site: "@tradingprogpt",
         creator: "@xentristech",
-        title: "Trading Pro GPT - Señales de Trading con IA | Prueba Gratis 5 Días",
+        title: "Trading Pro GPT - Señales de Trading con IA | Prueba Gratis 14 Días",
         description:
-          "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 5 días gratis!",
+          "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 14 días gratis!",
         images: [
           {
             url: "/twitter-image-es.png",
@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
           url: "https://tradingprogpt.com/es",
           name: "Trading Pro GPT - Señales de Trading con IA",
           description:
-            "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 5 días gratis! Por Xentris.tech, OpenAI Plus y TwelveData.",
+            "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 14 días gratis! Por Xentris.tech, OpenAI Plus y TwelveData.",
           inLanguage: "es",
           isPartOf: {
             "@type": "WebSite",
@@ -88,7 +88,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
             operatingSystem: "Web Browser",
             offers: {
               "@type": "Offer",
-              price: "30",
+              price: "50",
               priceCurrency: "USD",
               priceValidUntil: "2025-12-31",
               availability: "https://schema.org/InStock",
@@ -100,9 +100,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   }
 
   return {
-    title: "Trading Pro GPT - AI Trading Signals & Insights | 5-Day Free Trial",
+    title: "Trading Pro GPT - AI Trading Signals & Insights | 14-Day Free Trial",
     description:
-      "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 5 days free! Powered by Xentris.tech, OpenAI Plus & TwelveData.",
+      "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 14 days free! Powered by Xentris.tech, OpenAI Plus & TwelveData.",
     alternates: {
       canonical: "https://tradingprogpt.com/en",
       languages: {
@@ -114,9 +114,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       type: "website",
       locale: "en_US",
       url: "https://tradingprogpt.com/en",
-      title: "Trading Pro GPT - AI Trading Signals & Insights | 5-Day Free Trial",
+      title: "Trading Pro GPT - AI Trading Signals & Insights | 14-Day Free Trial",
       description:
-        "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 5 days free!",
+        "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 14 days free!",
       siteName: "Trading Pro GPT",
       images: [
         {
@@ -139,9 +139,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       card: "summary_large_image",
       site: "@tradingprogpt",
       creator: "@xentristech",
-      title: "Trading Pro GPT - AI Trading Signals & Insights | 5-Day Free Trial",
+      title: "Trading Pro GPT - AI Trading Signals & Insights | 14-Day Free Trial",
       description:
-        "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 5 days free!",
+        "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 14 days free!",
       images: [
         {
           url: "/twitter-image-en.png",
@@ -158,7 +158,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
         url: "https://tradingprogpt.com/en",
         name: "Trading Pro GPT - AI Trading Signals & Insights",
         description:
-          "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 5 days free! Powered by Xentris.tech, OpenAI Plus & TwelveData.",
+          "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 14 days free! Powered by Xentris.tech, OpenAI Plus & TwelveData.",
         inLanguage: "en",
         isPartOf: {
           "@type": "WebSite",
@@ -172,7 +172,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
           operatingSystem: "Web Browser",
           offers: {
             "@type": "Offer",
-            price: "30",
+            price: "50",
             priceCurrency: "USD",
             priceValidUntil: "2025-12-31",
             availability: "https://schema.org/InStock",

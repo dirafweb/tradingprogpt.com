@@ -76,7 +76,7 @@ export default function TermsPage({ params }: { params: { lang: string } }) {
         },
         {
           title: "Contact Information",
-          content: "For questions about these terms, contact us at contacto@xentris.tech.",
+          content: "For questions about these terms, contact us at info@xentris.tech.",
         },
       ],
     },
@@ -121,7 +121,7 @@ export default function TermsPage({ params }: { params: { lang: string } }) {
         },
         {
           title: "Información de Contacto",
-          content: "Para preguntas sobre estos términos, contáctanos en contacto@xentris.tech.",
+          content: "Para preguntas sobre estos términos, contáctanos en info@xentris.tech.",
         },
       ],
     },

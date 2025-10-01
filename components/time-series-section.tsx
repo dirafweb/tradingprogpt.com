@@ -1,6 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Clock, BarChart3 } from "lucide-react"
+import { BarChart3 } from "lucide-react"
 
 interface TimeSeriesSectionProps {
   lang: string
@@ -68,41 +66,72 @@ export function TimeSeriesSection({ lang }: TimeSeriesSectionProps) {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          {/* All intervals display */}
-          <div className="flex flex-wrap justify-center gap-3 mb-16">
-            {t.intervals.map((interval, index) => (
-              <Badge
-                key={index}
-                className="bg-[#1B123F] border border-[#331659] text-white px-4 py-2 text-sm font-medium hover:border-[#8B3BC0] transition-colors"
-              >
-                <Clock className="h-4 w-4 mr-2" />
-                {interval}
-              </Badge>
-            ))}
+          {/* Minimalist intervals display */}
+          <div className="mb-16">
+            <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-9 gap-2 mb-8">
+              {t.intervals.slice(0, 9).map((interval, index) => (
+                <div
+                  key={index}
+                  className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 hover:border-[#8B3BC0]/50 transition-all duration-300 hover:scale-105"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#8B3BC0]/0 to-[#8B3BC0]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative p-4 text-center">
+                    <div className="text-sm font-medium text-white/90 group-hover:text-white transition-colors">
+                      {interval}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Long-term intervals with different styling */}
+            <div className="flex justify-center gap-4">
+              {t.intervals.slice(9).map((interval, index) => (
+                <div
+                  key={index}
+                  className="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#8B3BC0]/20 to-[#331659]/30 backdrop-blur-sm border border-[#8B3BC0]/30 hover:border-[#8B3BC0]/70 transition-all duration-300 hover:scale-105"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#8B3BC0]/10 to-[#8B3BC0]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative px-6 py-3 text-center">
+                    <div className="text-base font-semibold text-white group-hover:text-white transition-colors">
+                      {interval}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Categories */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Simplified categories with modern cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {t.categories.map((category, index) => (
-              <Card
+              <div
                 key={index}
-                className="bg-[#1B123F]/30 border-[#331659] hover:border-[#8B3BC0]/50 transition-all duration-300"
+                className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 hover:border-[#8B3BC0]/50 transition-all duration-500 hover:scale-[1.02]"
               >
-                <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-[#8B3BC0]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <BarChart3 className="h-6 w-6 text-[#8B3BC0]" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#8B3BC0]/0 via-[#8B3BC0]/5 to-[#8B3BC0]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative p-8 text-center">
+                  <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#8B3BC0]/20 to-[#8B3BC0]/40 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <BarChart3 className="h-8 w-8 text-[#8B3BC0]" />
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-3">{category.title}</h3>
-                  <div className="flex flex-wrap justify-center gap-2 mb-4">
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#8B3BC0] transition-colors duration-300">
+                    {category.title}
+                  </h3>
+                  <div className="flex flex-wrap justify-center gap-2 mb-6">
                     {category.intervals.map((interval, idx) => (
-                      <Badge key={idx} className="bg-[#8B3BC0]/20 text-[#8B3BC0] text-xs px-2 py-1">
+                      <span
+                        key={idx}
+                        className="px-3 py-1 text-xs font-medium text-[#8B3BC0] bg-[#8B3BC0]/10 rounded-full border border-[#8B3BC0]/20 group-hover:bg-[#8B3BC0]/20 group-hover:border-[#8B3BC0]/40 transition-all duration-300"
+                      >
                         {interval}
-                      </Badge>
+                      </span>
                     ))}
                   </div>
-                  <p className="text-gray-300 text-sm">{category.description}</p>
-                </CardContent>
-              </Card>
+                  <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+                    {category.description}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>

@@ -54,11 +54,11 @@ export function Footer({ lang }: FooterProps) {
             <h3 className="text-white font-semibold mb-4">{t.contact}</h3>
             <div className="space-y-3">
               <a
-                href="mailto:contacto@xentris.tech"
+                href="mailto:info@xentris.tech"
                 className="flex items-center text-gray-300 hover:text-[#8B3BC0] transition-colors"
               >
                 <Mail className="h-4 w-4 mr-2" />
-                contacto@xentris.tech
+                info@xentris.tech
               </a>
               <div className="flex space-x-3">
                 <a
