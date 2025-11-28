@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Linkedin, Twitter, Mail } from "lucide-react"
 
 interface FooterProps {
@@ -40,9 +41,13 @@ export function Footer({ lang }: FooterProps) {
           {/* Logo and description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-[#8B3BC0] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">X</span>
-              </div>
+              <Image
+                src="/trading-pro-gpt-logo.png"
+                alt="Trading Pro GPT Logo"
+                width={40}
+                height={40}
+                className="rounded-lg"
+              />
               <div className="text-xl font-bold text-white">Trading Pro GPT</div>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">{t.poweredBy}</p>

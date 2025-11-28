@@ -16,9 +16,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
   if (lang === "es") {
     return {
-      title: "Trading Pro GPT - Señales de Trading con IA | Prueba Gratis 14 Días",
+      title: "Trading Pro GPT - Señales de Trading con IA | Desde $50/mes",
       description:
-        "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 14 días gratis! Por Xentris.tech, OpenAI Plus y TwelveData.",
+        "Tu copiloto IA para Stocks, Forex y Cripto. Plan Básico $50/mes o Enterprise $300/mes todo incluido. Por Xentris.tech, OpenAI y TwelveData.",
       alternates: {
         canonical: "https://tradingprogpt.com/es",
         languages: {
@@ -30,9 +30,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
         type: "website",
         locale: "es_ES",
         url: "https://tradingprogpt.com/es",
-        title: "Trading Pro GPT - Señales de Trading con IA | Prueba Gratis 14 Días",
+        title: "Trading Pro GPT - Señales de Trading con IA | Desde $50/mes",
         description:
-          "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 14 días gratis!",
+          "Tu copiloto IA para Stocks, Forex y Cripto. Plan Básico $50/mes o Enterprise $300/mes todo incluido.",
         siteName: "Trading Pro GPT",
         images: [
           {
@@ -55,9 +55,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
         card: "summary_large_image",
         site: "@tradingprogpt",
         creator: "@xentristech",
-        title: "Trading Pro GPT - Señales de Trading con IA | Prueba Gratis 14 Días",
+        title: "Trading Pro GPT - Señales de Trading con IA | Desde $50/mes",
         description:
-          "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 14 días gratis!",
+          "Tu copiloto IA para Stocks, Forex y Cripto. Plan Básico $50/mes o Enterprise $300/mes todo incluido.",
         images: [
           {
             url: "/twitter-image-es.png",
@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
           url: "https://tradingprogpt.com/es",
           name: "Trading Pro GPT - Señales de Trading con IA",
           description:
-            "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, consultas ilimitadas, análisis profesional. ¡Prueba 14 días gratis! Por Xentris.tech, OpenAI Plus y TwelveData.",
+            "Tu copiloto IA para Stocks, Forex y Cripto. Plan Básico $50/mes o Enterprise $300/mes todo incluido. Por Xentris.tech, OpenAI y TwelveData.",
           inLanguage: "es",
           isPartOf: {
             "@type": "WebSite",
@@ -86,13 +86,24 @@ export async function generateMetadata({ params }: { params: { lang: string } })
             name: "Trading Pro GPT",
             applicationCategory: "FinanceApplication",
             operatingSystem: "Web Browser",
-            offers: {
-              "@type": "Offer",
-              price: "50",
-              priceCurrency: "USD",
-              priceValidUntil: "2025-12-31",
-              availability: "https://schema.org/InStock",
-            },
+            offers: [
+              {
+                "@type": "Offer",
+                name: "Plan Básico",
+                price: "50",
+                priceCurrency: "USD",
+                priceValidUntil: "2025-12-31",
+                availability: "https://schema.org/InStock",
+              },
+              {
+                "@type": "Offer",
+                name: "Enterprise Business",
+                price: "300",
+                priceCurrency: "USD",
+                priceValidUntil: "2025-12-31",
+                availability: "https://schema.org/InStock",
+              },
+            ],
           },
         }),
       },
@@ -100,9 +111,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   }
 
   return {
-    title: "Trading Pro GPT - AI Trading Signals & Insights | 14-Day Free Trial",
+    title: "Trading Pro GPT - AI Trading Signals & Insights | From $50/month",
     description:
-      "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 14 days free! Powered by Xentris.tech, OpenAI Plus & TwelveData.",
+      "Your AI co-pilot for Stocks, Forex & Crypto. Basic Plan $50/month or Enterprise $300/month all-inclusive. Powered by Xentris.tech, OpenAI & TwelveData.",
     alternates: {
       canonical: "https://tradingprogpt.com/en",
       languages: {
@@ -114,9 +125,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       type: "website",
       locale: "en_US",
       url: "https://tradingprogpt.com/en",
-      title: "Trading Pro GPT - AI Trading Signals & Insights | 14-Day Free Trial",
+      title: "Trading Pro GPT - AI Trading Signals & Insights | From $50/month",
       description:
-        "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 14 days free!",
+        "Your AI co-pilot for Stocks, Forex & Crypto. Basic Plan $50/month or Enterprise $300/month all-inclusive.",
       siteName: "Trading Pro GPT",
       images: [
         {
@@ -139,9 +150,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       card: "summary_large_image",
       site: "@tradingprogpt",
       creator: "@xentristech",
-      title: "Trading Pro GPT - AI Trading Signals & Insights | 14-Day Free Trial",
+      title: "Trading Pro GPT - AI Trading Signals & Insights | From $50/month",
       description:
-        "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 14 days free!",
+        "Your AI co-pilot for Stocks, Forex & Crypto. Basic Plan $50/month or Enterprise $300/month all-inclusive.",
       images: [
         {
           url: "/twitter-image-en.png",
@@ -158,7 +169,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
         url: "https://tradingprogpt.com/en",
         name: "Trading Pro GPT - AI Trading Signals & Insights",
         description:
-          "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, unlimited queries, professional analysis. Try 14 days free! Powered by Xentris.tech, OpenAI Plus & TwelveData.",
+          "Your AI co-pilot for Stocks, Forex & Crypto. Basic Plan $50/month or Enterprise $300/month all-inclusive. Powered by Xentris.tech, OpenAI & TwelveData.",
         inLanguage: "en",
         isPartOf: {
           "@type": "WebSite",
@@ -170,13 +181,24 @@ export async function generateMetadata({ params }: { params: { lang: string } })
           name: "Trading Pro GPT",
           applicationCategory: "FinanceApplication",
           operatingSystem: "Web Browser",
-          offers: {
-            "@type": "Offer",
-            price: "50",
-            priceCurrency: "USD",
-            priceValidUntil: "2025-12-31",
-            availability: "https://schema.org/InStock",
-          },
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Basic Plan",
+              price: "50",
+              priceCurrency: "USD",
+              priceValidUntil: "2025-12-31",
+              availability: "https://schema.org/InStock",
+            },
+            {
+              "@type": "Offer",
+              name: "Enterprise Business",
+              price: "300",
+              priceCurrency: "USD",
+              priceValidUntil: "2025-12-31",
+              availability: "https://schema.org/InStock",
+            },
+          ],
         },
       }),
     },

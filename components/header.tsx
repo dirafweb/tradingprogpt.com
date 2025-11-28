@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { LanguageSelector } from "@/components/language-selector"
 import { Menu, X } from "lucide-react"
@@ -34,10 +35,15 @@ export function Header({ lang }: HeaderProps) {
     <header className="sticky top-0 z-50 bg-[#0D0D0D]/95 backdrop-blur-sm border-b border-[#331659]/20">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo placeholder - User will upload SVG later */}
-          <Link href={`/${lang}`} className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-[#8B3BC0] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">X</span>
+          <Link href={`/${lang}`} className="flex items-center space-x-3">
+            <div className="w-10 h-10 flex-shrink-0">
+              <Image
+                src="/trading-pro-gpt-logo.png"
+                alt="Trading Pro GPT Logo"
+                width={40}
+                height={40}
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="text-xl font-bold text-white">Trading Pro GPT</div>
           </Link>

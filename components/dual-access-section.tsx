@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Plus, Zap, Target, Shield, Clock } from "lucide-react"
+import { Check } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 interface DualAccessSectionProps {
   lang: string
@@ -9,34 +11,78 @@ interface DualAccessSectionProps {
 export function DualAccessSection({ lang }: DualAccessSectionProps) {
   const content = {
     en: {
-      title: "Why do you need both accesses?",
-      subtitle: "The winning formula:",
-      openaiTitle: "OpenAI Plus",
-      openaiPrice: "$20 USD/month",
-      openaiDescription: "Your AI engine: speed, power and unlimited responses.",
-      tradingTitle: "Trading Pro GPT",
-      tradingPrice: "$50 USD/month",
-      tradingDescription:
-        "Your trading expert: personalized signals, real-time data, technical/fundamental analysis, adapted strategies and priority support.",
-      resultTitle: "The result?",
-      benefits: ["Safer decisions", "Less stress", "More clarity", "Optimal reaction time"],
-      totalPrice: "$70 USD/month",
-      totalDescription: "Complete professional trading solution",
+      title: "Choose Your Plan",
+      subtitle: "Select the option that best fits your trading needs",
+      basicPlan: {
+        badge: "Basic Plan",
+        price: "$50 USD/month",
+        title: "Trading Pro GPT",
+        description: "For traders who already have OpenAI Plus",
+        features: [
+          "Full access to Trading Pro GPT",
+          "Real-time signals & analysis",
+          "All technical indicators",
+          "Personalized strategies",
+          "Standard support",
+        ],
+        note: "Requires separate OpenAI Plus subscription ($20/month)",
+        totalNote: "Total with OpenAI Plus: $70/month",
+        cta: "Get Basic Plan",
+      },
+      enterprisePlan: {
+        badge: "Enterprise Business",
+        popular: "Most Popular",
+        price: "$300 USD/month",
+        title: "Complete Solution",
+        description: "Everything included in one package",
+        features: [
+          "OpenAI Enterprise included",
+          "Full access to Trading Pro GPT",
+          "Professional education & training",
+          "Real-time signals & analysis",
+          "All technical indicators",
+          "Priority 24/7 support",
+        ],
+        note: "No additional subscriptions needed",
+        cta: "Get Enterprise",
+      },
     },
     es: {
-      title: "¿Por qué necesitas ambos accesos?",
-      subtitle: "La fórmula ganadora:",
-      openaiTitle: "OpenAI Plus",
-      openaiPrice: "$20 USD/mes",
-      openaiDescription: "Tu motor de IA: velocidad, potencia y respuestas ilimitadas.",
-      tradingTitle: "Trading Pro GPT",
-      tradingPrice: "$50 USD/mes",
-      tradingDescription:
-        "Tu experto de trading: señales personalizadas, datos en tiempo real, análisis técnico/fundamental, estrategias adaptadas y soporte prioritario.",
-      resultTitle: "¿El resultado?",
-      benefits: ["Decisiones más seguras", "Menos estrés", "Más claridad", "Tiempo de reacción óptimo"],
-      totalPrice: "$70 USD/mes",
-      totalDescription: "Solución completa de trading profesional",
+      title: "Elige Tu Plan",
+      subtitle: "Selecciona la opción que mejor se adapte a tus necesidades de trading",
+      basicPlan: {
+        badge: "Plan Básico",
+        price: "$50 USD/mes",
+        title: "Trading Pro GPT",
+        description: "Para traders que ya tienen OpenAI Plus",
+        features: [
+          "Acceso completo a Trading Pro GPT",
+          "Señales y análisis en tiempo real",
+          "Todos los indicadores técnicos",
+          "Estrategias personalizadas",
+          "Soporte estándar",
+        ],
+        note: "Requiere suscripción separada de OpenAI Plus ($20/mes)",
+        totalNote: "Total con OpenAI Plus: $70/mes",
+        cta: "Obtener Plan Básico",
+      },
+      enterprisePlan: {
+        badge: "Enterprise Business",
+        popular: "Más Popular",
+        price: "$300 USD/mes",
+        title: "Solución Completa",
+        description: "Todo incluido en un solo paquete",
+        features: [
+          "OpenAI Enterprise incluido",
+          "Acceso completo a Trading Pro GPT",
+          "Educación y formación profesional",
+          "Señales y análisis en tiempo real",
+          "Todos los indicadores técnicos",
+          "Soporte prioritario 24/7",
+        ],
+        note: "No necesitas suscripciones adicionales",
+        cta: "Obtener Enterprise",
+      },
     },
   }
 
@@ -47,70 +93,83 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">{t.title}</h2>
-          <p className="text-2xl text-[#8B3BC0] font-semibold">{t.subtitle}</p>
+          <p className="text-xl text-[#8B3BC0] font-semibold">{t.subtitle}</p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
-          {/* Two services comparison */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            {/* OpenAI Plus */}
-            <Card className="bg-[#1B123F]/30 border-[#331659] hover:border-[#8B3BC0]/50 transition-all duration-300">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Zap className="h-8 w-8 text-green-400" />
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Basic Plan */}
+            <Card className="bg-[#1B123F]/50 border-[#331659] hover:border-[#8B3BC0]/50 transition-all duration-300">
+              <CardContent className="p-8">
+                <Badge className="bg-[#331659] text-white mb-4">{t.basicPlan.badge}</Badge>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-white">{t.basicPlan.price}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">{t.openaiTitle}</h3>
-                <Badge className="bg-green-500 text-white mb-4 text-lg px-4 py-2">{t.openaiPrice}</Badge>
-                <p className="text-gray-300 leading-relaxed">{t.openaiDescription}</p>
+                <h3 className="text-2xl font-bold text-white mb-2">{t.basicPlan.title}</h3>
+                <p className="text-gray-400 mb-6">{t.basicPlan.description}</p>
+
+                <ul className="space-y-3 mb-6">
+                  {t.basicPlan.features.map((feature, index) => (
+                    <li key={index} className="flex items-center text-gray-300">
+                      <Check className="h-5 w-5 text-[#8B3BC0] mr-3 flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="bg-[#0D0D0D]/50 rounded-lg p-4 mb-6">
+                  <p className="text-sm text-gray-400">{t.basicPlan.note}</p>
+                  <p className="text-sm text-[#8B3BC0] font-semibold mt-1">{t.basicPlan.totalNote}</p>
+                </div>
+
+                <Button asChild className="w-full bg-[#331659] hover:bg-[#331659]/80 text-white">
+                  <Link
+                    href="https://chatgpt.com/g/g-Apjq2CgWQ-trading-pro-gpt-trading-signals-insights"
+                    target="_blank"
+                  >
+                    {t.basicPlan.cta}
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
-            {/* Trading Pro GPT */}
-            <Card className="bg-[#1B123F]/30 border-[#331659] hover:border-[#8B3BC0]/50 transition-all duration-300">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-[#8B3BC0]/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Target className="h-8 w-8 text-[#8B3BC0]" />
+            {/* Enterprise Plan */}
+            <Card className="bg-gradient-to-br from-[#1B123F] to-[#331659] border-[#8B3BC0] shadow-2xl shadow-[#8B3BC0]/20 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <Badge className="bg-[#8B3BC0] text-white px-4 py-1">{t.enterprisePlan.popular}</Badge>
+              </div>
+              <CardContent className="p-8 pt-10">
+                <Badge className="bg-[#8B3BC0] text-white mb-4">{t.enterprisePlan.badge}</Badge>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-white">{t.enterprisePlan.price}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">{t.tradingTitle}</h3>
-                <Badge className="bg-[#8B3BC0] text-white mb-4 text-lg px-4 py-2">{t.tradingPrice}</Badge>
-                <p className="text-gray-300 leading-relaxed">{t.tradingDescription}</p>
+                <h3 className="text-2xl font-bold text-white mb-2">{t.enterprisePlan.title}</h3>
+                <p className="text-gray-300 mb-6">{t.enterprisePlan.description}</p>
+
+                <ul className="space-y-3 mb-6">
+                  {t.enterprisePlan.features.map((feature, index) => (
+                    <li key={index} className="flex items-center text-white">
+                      <Check className="h-5 w-5 text-[#8B3BC0] mr-3 flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="bg-[#0D0D0D]/30 rounded-lg p-4 mb-6">
+                  <p className="text-sm text-gray-300">{t.enterprisePlan.note}</p>
+                </div>
+
+                <Button asChild className="w-full bg-[#8B3BC0] hover:bg-[#8B3BC0]/80 text-white font-bold">
+                  <Link
+                    href="https://chatgpt.com/g/g-Apjq2CgWQ-trading-pro-gpt-trading-signals-insights"
+                    target="_blank"
+                  >
+                    {t.enterprisePlan.cta}
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </div>
-
-          {/* Plus symbol */}
-          <div className="flex justify-center mb-12">
-            <div className="w-16 h-16 bg-[#8B3BC0] rounded-full flex items-center justify-center">
-              <Plus className="h-8 w-8 text-white" />
-            </div>
-          </div>
-
-          {/* Results section */}
-          <Card className="bg-gradient-to-br from-[#1B123F] to-[#331659] border-[#8B3BC0]/50 shadow-2xl">
-            <CardContent className="p-8 md:p-12 text-center">
-              <h3 className="text-3xl font-bold text-white mb-8">{t.resultTitle}</h3>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-                {t.benefits.map((benefit, index) => {
-                  const icons = [Shield, Clock, Target, Zap]
-                  const Icon = icons[index]
-                  return (
-                    <div key={index} className="text-center">
-                      <div className="w-12 h-12 bg-[#8B3BC0]/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <Icon className="h-6 w-6 text-[#8B3BC0]" />
-                      </div>
-                      <p className="text-white font-semibold">{benefit}</p>
-                    </div>
-                  )
-                })}
-              </div>
-
-              <div className="border-t border-[#8B3BC0]/30 pt-8">
-                <Badge className="bg-[#8B3BC0] text-white mb-4 text-2xl px-6 py-3">{t.totalPrice}</Badge>
-                <p className="text-xl text-gray-300">{t.totalDescription}</p>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

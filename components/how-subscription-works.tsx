@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, CheckCircle, Zap, Target, Infinity } from "lucide-react"
+import { ArrowRight, CheckCircle, Zap, Infinity, DollarSign } from "lucide-react"
 import Link from "next/link"
 
 interface HowSubscriptionWorksProps {
@@ -11,63 +11,63 @@ export function HowSubscriptionWorks({ lang }: HowSubscriptionWorksProps) {
   const content = {
     en: {
       title: "How It Works",
-      subtitle: "Simple steps to professional trading",
+      subtitle: "Simple steps to start trading with AI",
       steps: [
         {
           number: "1",
-          title: "Activate OpenAI Plus",
-          description: "AI engine, $20/month",
-          icon: Zap,
+          title: "Choose Your Plan",
+          description: "Basic ($50/month) or Enterprise Business ($300/month with everything included)",
+          icon: DollarSign,
         },
         {
           number: "2",
-          title: "Subscribe to Trading Pro GPT",
-          description: "All trading features, $50/month",
-          icon: Target,
+          title: "Get Access",
+          description: "Instant access to Trading Pro GPT and all features",
+          icon: Zap,
         },
         {
           number: "3",
-          title: "Access from one application:",
-          description: "Everything integrated seamlessly",
+          title: "Start Trading Like a Pro",
+          description: "Use AI-powered signals and analysis to make informed decisions",
           icon: Infinity,
         },
       ],
-      features: ["Instant responses", "Professional analysis", "Advanced tools", "No limits or blocks"],
+      features: ["Real-time signals", "Professional analysis", "All indicators", "Personalized strategies"],
       finalMessage:
-        "This is how our system works: you have the most advanced AI and we connect it to the real world of trading so you can operate like the professionals.",
+        "Choose the plan that fits your needs: Basic for experienced traders with OpenAI Plus, or Enterprise for a complete all-in-one solution with education included.",
       cta: "Start Now",
     },
     es: {
       title: "Cómo Funciona",
-      subtitle: "Pasos simples hacia el trading profesional",
+      subtitle: "Pasos simples para comenzar a hacer trading con IA",
       steps: [
         {
           number: "1",
-          title: "Activa OpenAI Plus",
-          description: "Motor IA, $20/mes",
-          icon: Zap,
+          title: "Elige Tu Plan",
+          description: "Básico ($50/mes) o Enterprise Business ($300/mes con todo incluido)",
+          icon: DollarSign,
         },
         {
           number: "2",
-          title: "Suscríbete a Trading Pro GPT",
-          description: "Todas las funciones de trading, $50/mes",
-          icon: Target,
+          title: "Obtén Acceso",
+          description: "Acceso instantáneo a Trading Pro GPT y todas las funciones",
+          icon: Zap,
         },
         {
           number: "3",
-          title: "Accede desde una sola aplicación:",
-          description: "Todo integrado perfectamente",
+          title: "Comienza a Operar como un Pro",
+          description: "Usa señales y análisis impulsados por IA para tomar decisiones informadas",
           icon: Infinity,
         },
       ],
       features: [
-        "Respuestas instantáneas",
+        "Señales en tiempo real",
         "Análisis profesional",
-        "Herramientas avanzadas",
-        "Sin límites ni bloqueos",
+        "Todos los indicadores",
+        "Estrategias personalizadas",
       ],
       finalMessage:
-        "Así funciona nuestro sistema: tienes la IA más avanzada y nosotros la conectamos al mundo real del trading para que operes como los profesionales.",
+        "Elige el plan que se adapte a tus necesidades: Básico para traders experimentados con OpenAI Plus, o Enterprise para una solución completa todo-en-uno con educación incluida.",
       cta: "Comenzar Ahora",
     },
   }

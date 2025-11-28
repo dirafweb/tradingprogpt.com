@@ -41,9 +41,19 @@ export function FAQSection({ lang }: FAQSectionProps) {
             "Our signals are based on professional-grade data from TwelveData and advanced AI analysis. While no trading system can guarantee profits, our AI-powered approach helps eliminate emotional bias and provides data-driven insights for better decision-making.",
         },
         {
-          question: "How much does the tool cost?",
+          question: "What are the pricing options?",
           answer:
-            "Trading Pro GPT costs $50 USD per month. For the complete professional solution, you'll also need OpenAI Plus ($20 USD/month), making the total $70 USD per month for unlimited access to all features and professional-grade trading tools.",
+            "We offer two plans: Basic Plan at $50 USD/month (requires your own OpenAI Plus subscription at $20/month, total $70/month) and Enterprise Business at $300 USD/month (includes everything: OpenAI Enterprise, all trading features, and professional education). Choose Basic if you already have OpenAI Plus, or Enterprise for a complete all-in-one solution with OpenAI Enterprise access.",
+        },
+        {
+          question: "What's included in the Basic Plan ($50/month)?",
+          answer:
+            "The Basic Plan includes full access to Trading Pro GPT, real-time signals and analysis, all technical indicators, personalized strategies, and standard support. Note: This plan requires a separate OpenAI Plus subscription ($20/month) to function.",
+        },
+        {
+          question: "What's included in the Enterprise Business Plan ($300/month)?",
+          answer:
+            "The Enterprise Business Plan is our complete all-in-one solution that includes: OpenAI Enterprise (no separate subscription needed), full access to Trading Pro GPT, professional education and training resources, real-time signals and analysis, all technical indicators, personalized strategies, and priority 24/7 support.",
         },
         {
           question: "What personal data is collected?",
@@ -66,19 +76,9 @@ export function FAQSection({ lang }: FAQSectionProps) {
             "Yes, Trading Pro GPT is accessible through ChatGPT on all devices including mobile phones, tablets, and desktop computers. The interface is responsive and optimized for all screen sizes.",
         },
         {
-          question: "Why do I need both OpenAI Plus and Trading Pro GPT?",
+          question: "Do I need OpenAI Plus?",
           answer:
-            "OpenAI Plus ($20/month) provides the AI engine with unlimited responses and speed. Trading Pro GPT ($50/month) adds specialized trading features, real-time data, personalized signals, and professional analysis. Together they create a complete professional trading solution for $70/month total.",
-        },
-        {
-          question: "What is included in the 14-day free trial?",
-          answer:
-            "The 14-day trial includes complete unlimited access to all Trading Pro GPT features: real-time signals, professional analysis, unlimited queries, all indicators, and priority support. No restrictions during the trial period.",
-        },
-        {
-          question: "How much does the complete solution cost?",
-          answer:
-            "The complete professional solution costs $70 USD per month total: $20 USD for OpenAI Plus plus $50 USD for Trading Pro GPT. This gives you unlimited access to all features and professional-grade trading tools.",
+            "It depends on your plan. With the Basic Plan ($50/month), you need your own OpenAI Plus subscription ($20/month). With the Enterprise Business Plan ($300/month), OpenAI Enterprise is already included - no additional subscription required.",
         },
       ],
     },
@@ -117,9 +117,19 @@ export function FAQSection({ lang }: FAQSectionProps) {
             "Nuestras señales se basan en datos de grado profesional de TwelveData y análisis IA avanzado. Aunque ningún sistema de trading puede garantizar ganancias, nuestro enfoque impulsado por IA ayuda a eliminar el sesgo emocional y proporciona insights basados en datos para mejor toma de decisiones.",
         },
         {
-          question: "¿Cuánto cuesta la herramienta?",
+          question: "¿Cuáles son las opciones de precios?",
           answer:
-            "Trading Pro GPT cuesta $50 USD por mes. Para la solución profesional completa, también necesitarás OpenAI Plus ($20 USD/mes), haciendo un total de $70 USD por mes para acceso ilimitado a todas las funciones y herramientas de trading de grado profesional.",
+            "Ofrecemos dos planes: Plan Básico a $50 USD/mes (requiere tu propia suscripción de OpenAI Plus a $20/mes, total $70/mes) y Enterprise Business a $300 USD/mes (incluye todo: OpenAI Enterprise, todas las funciones de trading y educación profesional). Elige Básico si ya tienes OpenAI Plus, o Enterprise para una solución completa todo-en-uno con acceso a OpenAI Enterprise.",
+        },
+        {
+          question: "¿Qué incluye el Plan Básico ($50/mes)?",
+          answer:
+            "El Plan Básico incluye acceso completo a Trading Pro GPT, señales y análisis en tiempo real, todos los indicadores técnicos, estrategias personalizadas y soporte estándar. Nota: Este plan requiere una suscripción separada de OpenAI Plus ($20/mes) para funcionar.",
+        },
+        {
+          question: "¿Qué incluye el Plan Enterprise Business ($300/mes)?",
+          answer:
+            "El Plan Enterprise Business es nuestra solución completa todo-en-uno que incluye: OpenAI Enterprise (sin suscripción separada necesaria), acceso completo a Trading Pro GPT, recursos de educación y formación profesional, señales y análisis en tiempo real, todos los indicadores técnicos, estrategias personalizadas y soporte prioritario 24/7.",
         },
         {
           question: "¿Qué datos personales se recopilan?",
@@ -142,19 +152,9 @@ export function FAQSection({ lang }: FAQSectionProps) {
             "Sí, Trading Pro GPT es accesible a través de ChatGPT en todos los dispositivos incluyendo teléfonos móviles, tablets y computadoras de escritorio. La interfaz es responsive y optimizada para todos los tamaños de pantalla.",
         },
         {
-          question: "¿Por qué necesito tanto OpenAI Plus como Trading Pro GPT?",
+          question: "¿Necesito OpenAI Plus?",
           answer:
-            "OpenAI Plus ($20/mes) proporciona el motor IA con respuestas ilimitadas y velocidad. Trading Pro GPT ($50/mes) añade funciones especializadas de trading, datos en tiempo real, señales personalizadas y análisis profesional. Juntos crean una solución completa de trading profesional por $70/mes en total.",
-        },
-        {
-          question: "¿Qué incluye la prueba gratuita de 14 días?",
-          answer:
-            "La prueba de 14 días incluye acceso completo ilimitado a todas las funciones de Trading Pro GPT: señales en tiempo real, análisis profesional, consultas ilimitadas, todos los indicadores y soporte prioritario. Sin restricciones durante el período de prueba.",
-        },
-        {
-          question: "¿Cuánto cuesta la solución completa?",
-          answer:
-            "La solución profesional completa cuesta $70 USD por mes en total: $20 USD por OpenAI Plus más $50 USD por Trading Pro GPT. Esto te da acceso ilimitado a todas las funciones y herramientas de trading de grado profesional.",
+            "Depende de tu plan. Con el Plan Básico ($50/mes), necesitas tu propia suscripción de OpenAI Plus ($20/mes). Con el Plan Enterprise Business ($300/mes), OpenAI Enterprise ya está incluido - no se requiere suscripción adicional.",
         },
       ],
     },

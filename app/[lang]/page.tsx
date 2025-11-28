@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import { HeroSection } from "@/components/hero-section"
-import { SpecialOfferSection } from "@/components/special-offer-section"
 import { VideoSection } from "@/components/video-section"
 import { WhySection } from "@/components/why-section"
 import { DualAccessSection } from "@/components/dual-access-section"
@@ -43,7 +42,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
           : "AI-powered trading application providing real-time signals and professional analysis",
       offers: {
         "@type": "Offer",
-        price: "30",
+        price: "300",
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
       },
@@ -61,7 +60,6 @@ export default function LandingPage({ params }: { params: { lang: string } }) {
   return (
     <>
       <HeroSection lang={params.lang} />
-      <SpecialOfferSection lang={params.lang} />
       <VideoSection lang={params.lang} />
       <WhySection lang={params.lang} />
       <DualAccessSection lang={params.lang} />
