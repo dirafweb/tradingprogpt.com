@@ -10,12 +10,12 @@ export function RiskDisclaimer({ lang }: RiskDisclaimerProps) {
     en: {
       title: "Important Risk Disclaimer",
       disclaimer:
-        "Trading involves significant risk of capital loss. This tool is not financial advice. Past results do not guarantee future returns. Consult with a professional before trading. Never invest more than you can afford to lose.",
+        "This platform is for educational purposes only and does not provide financial advice, trading recommendations, or investment strategies. Trading and investing involve significant risk of loss. Past performance does not guarantee future results. Consult with a licensed financial professional before making financial decisions. Never risk money you cannot afford to lose.",
     },
     es: {
       title: "Aviso Importante de Riesgo",
       disclaimer:
-        "El trading conlleva riesgos significativos de pérdida de capital. Esta herramienta no constituye asesoría financiera. Los resultados pasados no garantizan rendimientos futuros. Consulta con un profesional antes de operar. Nunca inviertas más de lo que puedes permitirte perder.",
+        "Esta plataforma es solo para fines educativos y no proporciona asesoría financiera, recomendaciones de trading ni estrategias de inversión. El trading y la inversión conllevan riesgo significativo de pérdida. El rendimiento pasado no garantiza resultados futuros. Consulta con un profesional financiero autorizado antes de tomar decisiones financieras. Nunca arriesgues dinero que no puedes permitirte perder.",
     },
   }
 

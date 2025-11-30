@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Brain, Shield, Clock, Users, TrendingUp, Zap } from "lucide-react"
+import { Brain, Shield, Clock, Users, BookOpen, Zap } from "lucide-react"
 
 interface WhySectionProps {
   lang: string
@@ -8,86 +8,80 @@ interface WhySectionProps {
 export function WhySection({ lang }: WhySectionProps) {
   const content = {
     en: {
-      title: "Why Trading Pro GPT?",
-      subtitle: "Discover what makes us different from traditional trading tools",
+      title: "What is Trading Pro GPT?",
+      subtitle: "An AI-driven educational assistant that helps you understand market behavior",
+      description:
+        "Trading Pro GPT is an AI-driven educational assistant that helps you understand market behavior using real-time information, technical indicators, and data-based insights. It is NOT a trading platform, does not provide financial advice, and does not offer buy/sell recommendations. Instead, it helps you learn how markets move, how indicators behave, and how data evolves over time.",
       features: [
         {
           icon: Brain,
-          title: "AI-Powered 360° Analysis",
+          title: "AI-Powered Learning",
           description:
-            "Automatic signals with technical, fundamental, sentiment analysis and AI strategies that eliminate emotional bias from your decisions.",
+            "Understand complex market concepts in simple terms with AI explanations tailored to your level.",
         },
         {
           icon: Clock,
-          title: "Real-Time Information",
-          description:
-            "Professional-quality data with TwelveData integration, ensuring you always have the most current market information.",
+          title: "Real-Time Data",
+          description: "See how markets behave right now with professional-quality data from TwelveData integration.",
         },
         {
           icon: Zap,
-          title: "Easy & Intuitive",
-          description:
-            "User-friendly interface designed for traders of all levels, from beginners to advanced professionals.",
+          title: "Beginner Friendly",
+          description: "No experience required — explanations are clear and intuitive for all learning levels.",
         },
         {
           icon: Users,
-          title: "Human Support",
-          description:
-            "Complete onboarding, dedicated support, and an active community of traders to help you succeed.",
+          title: "Advanced Insights",
+          description: "Ideal for those who want to go deeper into technical analysis and data interpretation.",
         },
         {
           icon: Shield,
-          title: "Expert Development",
-          description:
-            "100% developed by AI and trading experts from Xentris.tech, OpenAI, and TwelveData partnerships.",
+          title: "Flexible Access",
+          description: "Use it from desktop, mobile, or even upload your own datasets for learning purposes.",
         },
         {
-          icon: TrendingUp,
-          title: "Proven Results",
-          description:
-            "Trusted by thousands of traders worldwide who have improved their decision-making and reduced risks.",
+          icon: BookOpen,
+          title: "Educational Focus",
+          description: "Improve your financial literacy with concepts like trends, patterns, indicators, and more.",
         },
       ],
     },
     es: {
-      title: "¿Por qué Trading Pro GPT?",
-      subtitle: "Descubre qué nos hace diferentes de las herramientas de trading tradicionales",
+      title: "¿Qué es Trading Pro GPT?",
+      subtitle: "Un asistente educativo impulsado por IA que te ayuda a entender el comportamiento del mercado",
+      description:
+        "Trading Pro GPT es un asistente educativo impulsado por IA que te ayuda a entender el comportamiento del mercado usando información en tiempo real, indicadores técnicos e insights basados en datos. NO es una plataforma de trading, no proporciona asesoría financiera y no ofrece recomendaciones de compra/venta. En cambio, te ayuda a aprender cómo se mueven los mercados, cómo se comportan los indicadores y cómo evolucionan los datos con el tiempo.",
       features: [
         {
           icon: Brain,
-          title: "Análisis 360° con IA",
+          title: "Aprendizaje con IA",
           description:
-            "Señales automáticas con análisis técnico, fundamental, de sentimiento y estrategias IA que eliminan el sesgo emocional de tus decisiones.",
+            "Comprende conceptos complejos del mercado en términos simples con explicaciones de IA adaptadas a tu nivel.",
         },
         {
           icon: Clock,
-          title: "Información en Tiempo Real",
-          description:
-            "Datos de calidad profesional con integración TwelveData, asegurando que siempre tengas la información de mercado más actual.",
+          title: "Datos en Tiempo Real",
+          description: "Ve cómo se comportan los mercados ahora mismo con datos de calidad profesional de TwelveData.",
         },
         {
           icon: Zap,
-          title: "Fácil e Intuitiva",
-          description:
-            "Interfaz amigable diseñada para traders de todos los niveles, desde principiantes hasta profesionales avanzados.",
+          title: "Amigable para Principiantes",
+          description: "No se requiere experiencia — las explicaciones son claras e intuitivas para todos los niveles.",
         },
         {
           icon: Users,
-          title: "Soporte Humano",
-          description:
-            "Onboarding completo, soporte dedicado y una comunidad activa de traders para ayudarte a tener éxito.",
+          title: "Insights Avanzados",
+          description: "Ideal para quienes quieren profundizar en análisis técnico e interpretación de datos.",
         },
         {
           icon: Shield,
-          title: "Desarrollo Experto",
-          description:
-            "100% desarrollado por expertos en IA y trading de Xentris.tech, con alianzas OpenAI y TwelveData.",
+          title: "Acceso Flexible",
+          description: "Úsalo desde escritorio, móvil o incluso sube tus propios datasets para fines de aprendizaje.",
         },
         {
-          icon: TrendingUp,
-          title: "Resultados Comprobados",
-          description:
-            "Confiado por miles de traders en todo el mundo que han mejorado su toma de decisiones y reducido riesgos.",
+          icon: BookOpen,
+          title: "Enfoque Educativo",
+          description: "Mejora tu educación financiera con conceptos como tendencias, patrones, indicadores y más.",
         },
       ],
     },
@@ -98,12 +92,13 @@ export function WhySection({ lang }: WhySectionProps) {
   return (
     <section className="py-20 bg-gradient-to-b from-[#0D0D0D] to-[#1B123F]/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">{t.title}</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">{t.subtitle}</p>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">{t.subtitle}</p>
+          <p className="text-gray-400 max-w-4xl mx-auto leading-relaxed">{t.description}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {t.features.map((feature, index) => (
             <Card
               key={index}

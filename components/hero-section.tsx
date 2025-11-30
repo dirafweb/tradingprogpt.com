@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Star, Users, TrendingUp } from "lucide-react"
+import { Star, Users, BookOpen } from "lucide-react"
 import Link from "next/link"
 import Spline from "@splinetool/react-spline/next"
 
@@ -10,22 +10,22 @@ interface HeroSectionProps {
 export function HeroSection({ lang }: HeroSectionProps) {
   const content = {
     en: {
-      tagline: "More than signals, intelligence that powers your trading.",
+      tagline: "AI-Powered Market Learning Tool",
       subtitle:
-        "Your AI co-pilot for Stocks, Forex & Crypto. Real-time signals, 360° analysis, and actionable strategies. Powered by Xentris.tech, OpenAI AI, and TwelveData live data.",
-      cta: "Go to App",
+        "Understand financial markets using real-time data and intelligent insights. Designed for educational purposes to help users improve their market awareness and analytical skills.",
+      cta: "Start Exploring",
       rating: "4.5",
-      category: "Research & Analysis",
+      category: "Education & Analysis",
       users: "11,663 conversations",
       poweredBy: "Powered by Xentris.tech, OpenAI & TwelveData",
     },
     es: {
-      tagline: "Más que señales, inteligencia que impulsa tu trading.",
+      tagline: "Herramienta de Aprendizaje de Mercados con IA",
       subtitle:
-        "Tu copiloto IA para Stocks, Forex y Cripto. Señales en tiempo real, análisis 360° y estrategias accionables. Desarrollado por Xentris.tech con IA de OpenAI y datos de TwelveData.",
-      cta: "Ir a la aplicación",
+        "Comprende los mercados financieros usando datos en tiempo real e insights inteligentes. Diseñado con fines educativos para ayudar a los usuarios a mejorar su conocimiento del mercado y habilidades analíticas.",
+      cta: "Comenzar a Explorar",
       rating: "4.5",
-      category: "Investigación y Análisis",
+      category: "Educación y Análisis",
       users: "11,663 conversaciones",
       poweredBy: "Desarrollado por Xentris.tech, OpenAI y TwelveData",
     },
@@ -89,7 +89,7 @@ export function HeroSection({ lang }: HeroSectionProps) {
               <div className="hidden sm:block w-px h-6 bg-gray-600" />
 
               <div className="flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-[#8B3BC0]" />
+                <BookOpen className="h-5 w-5 text-[#8B3BC0]" />
                 <span>{t.category}</span>
               </div>
 

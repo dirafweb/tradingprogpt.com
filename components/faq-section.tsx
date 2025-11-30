@@ -11,64 +11,44 @@ export function FAQSection({ lang }: FAQSectionProps) {
       subtitle: "Everything you need to know about Trading Pro GPT",
       faqs: [
         {
-          question: "What is Trading Pro GPT?",
+          question: "Does this tool give financial advice?",
           answer:
-            "Trading Pro GPT is a real-time trading signals and analysis solution, developed by Xentris.tech using OpenAI AI and TwelveData data. It provides comprehensive market analysis, automated signals, and AI-powered strategies for Stocks, Forex, and Crypto markets.",
+            "No. Trading Pro GPT is strictly an educational tool. It does not give financial, investment, or trading advice. It helps you understand market concepts and data for learning purposes only.",
+        },
+        {
+          question: "Can it tell me what to buy or sell?",
+          answer:
+            "No. The platform provides educational analysis only. It does not provide trading signals or actionable recommendations. All content is for learning and research purposes.",
+        },
+        {
+          question: "Is this safe to use?",
+          answer:
+            "Yes. It uses publicly available market data for learning and educational purposes. We implement international security and privacy standards to protect your data.",
+        },
+        {
+          question: "Do I need experience?",
+          answer:
+            "Not at all — the platform is designed to explain concepts clearly for all levels, from complete beginners to those seeking advanced understanding.",
         },
         {
           question: "What markets does it cover?",
           answer:
-            "Trading Pro GPT covers three major markets: Stocks (equities), Forex (foreign exchange), and Cryptocurrency. Our AI analyzes real-time data from all these markets to provide comprehensive trading insights.",
-        },
-        {
-          question: "Do I need prior experience in trading or AI?",
-          answer:
-            "No prior experience is required. Trading Pro GPT is designed for all levels, from complete beginners to advanced traders. Our intuitive interface and comprehensive onboarding process make it easy for anyone to start trading with AI assistance.",
-        },
-        {
-          question: "How do the signals work?",
-          answer:
-            "Our signals are generated through advanced AI analysis of technical indicators, fundamental data, market sentiment, and real-time price movements. The AI processes vast amounts of data to identify trading opportunities and present them as clear, actionable signals.",
-        },
-        {
-          question: "Can I customize my strategies?",
-          answer:
-            "Yes, Trading Pro GPT offers customizable strategies that adapt to your risk tolerance, trading style, and market preferences. You can adjust parameters and settings to align with your personal trading approach.",
-        },
-        {
-          question: "How reliable are the signals?",
-          answer:
-            "Our signals are based on professional-grade data from TwelveData and advanced AI analysis. While no trading system can guarantee profits, our AI-powered approach helps eliminate emotional bias and provides data-driven insights for better decision-making.",
+            "Trading Pro GPT covers educational content for Stocks, Forex, and Cryptocurrency markets. You can learn about indicators, patterns, and market dynamics across all three.",
         },
         {
           question: "What are the pricing options?",
           answer:
-            "We offer two plans: Basic Plan at $50 USD/month (requires your own OpenAI Plus subscription at $20/month, total $70/month) and Enterprise Business at $300 USD/month (includes everything: OpenAI Enterprise, all trading features, and professional education). Choose Basic if you already have OpenAI Plus, or Enterprise for a complete all-in-one solution with OpenAI Enterprise access.",
+            "We offer two plans: Basic Plan at $50 USD/month (requires your own OpenAI Plus subscription at $20/month) for standard educational features, and Enterprise Business at $300 USD/month (includes OpenAI Enterprise and professional education modules) for complete access.",
         },
         {
           question: "What's included in the Basic Plan ($50/month)?",
           answer:
-            "The Basic Plan includes full access to Trading Pro GPT, real-time signals and analysis, all technical indicators, personalized strategies, and standard support. Note: This plan requires a separate OpenAI Plus subscription ($20/month) to function.",
+            "The Basic Plan includes full access to Trading Pro GPT educational features, real-time data visualization, indicator explanations, and standard support. Requires a separate OpenAI Plus subscription ($20/month).",
         },
         {
           question: "What's included in the Enterprise Business Plan ($300/month)?",
           answer:
-            "The Enterprise Business Plan is our complete all-in-one solution that includes: OpenAI Enterprise (no separate subscription needed), full access to Trading Pro GPT, professional education and training resources, real-time signals and analysis, all technical indicators, personalized strategies, and priority 24/7 support.",
-        },
-        {
-          question: "What personal data is collected?",
-          answer:
-            "We collect minimal personal data necessary for service operation, following international privacy standards. This includes basic account information and trading preferences. We never share your personal data with third parties without consent.",
-        },
-        {
-          question: "How does Trading Pro GPT protect my privacy?",
-          answer:
-            "We implement international security and privacy standards to protect your data. All information is encrypted, securely stored, and processed according to GDPR and other international privacy regulations.",
-        },
-        {
-          question: "Is trading safe?",
-          answer:
-            "Trading involves inherent risks and potential for significant capital loss. Trading Pro GPT is a tool to assist decision-making but does not eliminate market risks. Always trade responsibly and never invest more than you can afford to lose.",
+            "The Enterprise Business Plan includes: OpenAI Enterprise access (no separate subscription needed), all educational features, professional learning modules and resources, advanced data analysis tools, and priority 24/7 support.",
         },
         {
           question: "Can I access it from mobile and desktop?",
@@ -76,9 +56,9 @@ export function FAQSection({ lang }: FAQSectionProps) {
             "Yes, Trading Pro GPT is accessible through ChatGPT on all devices including mobile phones, tablets, and desktop computers. The interface is responsive and optimized for all screen sizes.",
         },
         {
-          question: "Do I need OpenAI Plus?",
+          question: "What personal data is collected?",
           answer:
-            "It depends on your plan. With the Basic Plan ($50/month), you need your own OpenAI Plus subscription ($20/month). With the Enterprise Business Plan ($300/month), OpenAI Enterprise is already included - no additional subscription required.",
+            "We collect minimal personal data necessary for service operation, following international privacy standards. This includes basic account information. We never share your personal data with third parties without consent.",
         },
       ],
     },
@@ -87,64 +67,44 @@ export function FAQSection({ lang }: FAQSectionProps) {
       subtitle: "Todo lo que necesitas saber sobre Trading Pro GPT",
       faqs: [
         {
-          question: "¿Qué es Trading Pro GPT?",
+          question: "¿Esta herramienta da asesoría financiera?",
           answer:
-            "Trading Pro GPT es una solución de señales y análisis de trading en tiempo real, desarrollada por Xentris.tech usando IA de OpenAI y datos de TwelveData. Proporciona análisis integral del mercado, señales automáticas y estrategias impulsadas por IA para mercados de Acciones, Forex y Cripto.",
+            "No. Trading Pro GPT es estrictamente una herramienta educativa. No da asesoría financiera, de inversión o de trading. Te ayuda a entender conceptos de mercado y datos solo con fines de aprendizaje.",
+        },
+        {
+          question: "¿Puede decirme qué comprar o vender?",
+          answer:
+            "No. La plataforma proporciona análisis educativo únicamente. No proporciona señales de trading ni recomendaciones accionables. Todo el contenido es para fines de aprendizaje e investigación.",
+        },
+        {
+          question: "¿Es seguro usar?",
+          answer:
+            "Sí. Utiliza datos de mercado disponibles públicamente para fines de aprendizaje y educación. Implementamos estándares internacionales de seguridad y privacidad para proteger tus datos.",
+        },
+        {
+          question: "¿Necesito experiencia?",
+          answer:
+            "Para nada — la plataforma está diseñada para explicar conceptos claramente para todos los niveles, desde principiantes completos hasta quienes buscan comprensión avanzada.",
         },
         {
           question: "¿Qué mercados cubre?",
           answer:
-            "Trading Pro GPT cubre tres mercados principales: Acciones, Forex y Criptomonedas. Nuestra IA analiza datos en tiempo real de todos estos mercados para proporcionar insights integrales de trading.",
-        },
-        {
-          question: "¿Necesito experiencia previa en trading o IA?",
-          answer:
-            "No se requiere experiencia previa. Trading Pro GPT está diseñado para todos los niveles, desde principiantes completos hasta traders avanzados. Nuestra interfaz intuitiva y proceso de onboarding integral facilitan que cualquiera comience a hacer trading con asistencia IA.",
-        },
-        {
-          question: "¿Cómo funcionan las señales?",
-          answer:
-            "Nuestras señales se generan a través de análisis IA avanzado de indicadores técnicos, datos fundamentales, sentimiento del mercado y movimientos de precios en tiempo real. La IA procesa grandes cantidades de datos para identificar oportunidades de trading y presentarlas como señales claras y accionables.",
-        },
-        {
-          question: "¿Puedo personalizar mis estrategias?",
-          answer:
-            "Sí, Trading Pro GPT ofrece estrategias personalizables que se adaptan a tu tolerancia al riesgo, estilo de trading y preferencias de mercado. Puedes ajustar parámetros y configuraciones para alinearte con tu enfoque personal de trading.",
-        },
-        {
-          question: "¿Qué tan seguras son las señales?",
-          answer:
-            "Nuestras señales se basan en datos de grado profesional de TwelveData y análisis IA avanzado. Aunque ningún sistema de trading puede garantizar ganancias, nuestro enfoque impulsado por IA ayuda a eliminar el sesgo emocional y proporciona insights basados en datos para mejor toma de decisiones.",
+            "Trading Pro GPT cubre contenido educativo para mercados de Acciones, Forex y Criptomonedas. Puedes aprender sobre indicadores, patrones y dinámica del mercado en los tres.",
         },
         {
           question: "¿Cuáles son las opciones de precios?",
           answer:
-            "Ofrecemos dos planes: Plan Básico a $50 USD/mes (requiere tu propia suscripción de OpenAI Plus a $20/mes, total $70/mes) y Enterprise Business a $300 USD/mes (incluye todo: OpenAI Enterprise, todas las funciones de trading y educación profesional). Elige Básico si ya tienes OpenAI Plus, o Enterprise para una solución completa todo-en-uno con acceso a OpenAI Enterprise.",
+            "Ofrecemos dos planes: Plan Básico a $50 USD/mes (requiere tu propia suscripción de OpenAI Plus a $20/mes) para funciones educativas estándar, y Enterprise Business a $300 USD/mes (incluye OpenAI Enterprise y módulos de educación profesional) para acceso completo.",
         },
         {
           question: "¿Qué incluye el Plan Básico ($50/mes)?",
           answer:
-            "El Plan Básico incluye acceso completo a Trading Pro GPT, señales y análisis en tiempo real, todos los indicadores técnicos, estrategias personalizadas y soporte estándar. Nota: Este plan requiere una suscripción separada de OpenAI Plus ($20/mes) para funcionar.",
+            "El Plan Básico incluye acceso completo a las funciones educativas de Trading Pro GPT, visualización de datos en tiempo real, explicaciones de indicadores y soporte estándar. Requiere suscripción separada de OpenAI Plus ($20/mes).",
         },
         {
           question: "¿Qué incluye el Plan Enterprise Business ($300/mes)?",
           answer:
-            "El Plan Enterprise Business es nuestra solución completa todo-en-uno que incluye: OpenAI Enterprise (sin suscripción separada necesaria), acceso completo a Trading Pro GPT, recursos de educación y formación profesional, señales y análisis en tiempo real, todos los indicadores técnicos, estrategias personalizadas y soporte prioritario 24/7.",
-        },
-        {
-          question: "¿Qué datos personales se recopilan?",
-          answer:
-            "Recopilamos datos personales mínimos necesarios para la operación del servicio, siguiendo estándares internacionales de privacidad. Esto incluye información básica de cuenta y preferencias de trading. Nunca compartimos tus datos personales con terceros sin consentimiento.",
-        },
-        {
-          question: "¿Cómo protege Trading Pro GPT mi privacidad?",
-          answer:
-            "Implementamos estándares internacionales de seguridad y privacidad para proteger tus datos. Toda la información está encriptada, almacenada de forma segura y procesada según GDPR y otras regulaciones internacionales de privacidad.",
-        },
-        {
-          question: "¿Es seguro el trading?",
-          answer:
-            "El trading involucra riesgos inherentes y potencial de pérdida significativa de capital. Trading Pro GPT es una herramienta para asistir en la toma de decisiones pero no elimina los riesgos del mercado. Siempre opera responsablemente y nunca inviertas más de lo que puedes permitirte perder.",
+            "El Plan Enterprise Business incluye: acceso a OpenAI Enterprise (sin suscripción separada necesaria), todas las funciones educativas, módulos y recursos de aprendizaje profesional, herramientas avanzadas de análisis de datos y soporte prioritario 24/7.",
         },
         {
           question: "¿Puedo acceder desde móvil y escritorio?",
@@ -152,9 +112,9 @@ export function FAQSection({ lang }: FAQSectionProps) {
             "Sí, Trading Pro GPT es accesible a través de ChatGPT en todos los dispositivos incluyendo teléfonos móviles, tablets y computadoras de escritorio. La interfaz es responsive y optimizada para todos los tamaños de pantalla.",
         },
         {
-          question: "¿Necesito OpenAI Plus?",
+          question: "¿Qué datos personales se recopilan?",
           answer:
-            "Depende de tu plan. Con el Plan Básico ($50/mes), necesitas tu propia suscripción de OpenAI Plus ($20/mes). Con el Plan Enterprise Business ($300/mes), OpenAI Enterprise ya está incluido - no se requiere suscripción adicional.",
+            "Recopilamos datos personales mínimos necesarios para la operación del servicio, siguiendo estándares internacionales de privacidad. Esto incluye información básica de cuenta. Nunca compartimos tus datos personales con terceros sin consentimiento.",
         },
       ],
     },

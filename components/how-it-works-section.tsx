@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, LogIn, Target, BarChart3, Brain, TrendingUp } from "lucide-react"
+import { ArrowRight, MessageSquare, Database, BookOpen, BarChart3 } from "lucide-react"
 
 interface HowItWorksSectionProps {
   lang: string
@@ -9,63 +9,55 @@ export function HowItWorksSection({ lang }: HowItWorksSectionProps) {
   const content = {
     en: {
       title: "How It Works",
-      subtitle: "Get started with Trading Pro GPT in 5 simple steps",
+      subtitle: "Learn about markets in 4 simple steps",
       steps: [
         {
-          icon: LogIn,
-          title: "Access Trading Pro GPT",
-          description: "Click the link and start your AI-powered trading journey instantly.",
+          icon: MessageSquare,
+          title: "Ask in natural language",
+          description:
+            '"Explain the trend on EUR/USD" • "What does RSI tell me in this scenario?" • "How does volatility affect price movement?"',
         },
         {
-          icon: Target,
-          title: "Choose Your Market",
-          description: "Select from Stocks, Forex, or Crypto markets based on your trading preferences.",
+          icon: Database,
+          title: "AI analyzes real-time data",
+          description: "The system retrieves up-to-date market information and provides educational insights.",
+        },
+        {
+          icon: BookOpen,
+          title: "Learn from explanations",
+          description: "Clear, structured, and beginner-friendly breakdowns of market concepts.",
         },
         {
           icon: BarChart3,
-          title: "Receive Personalized Analysis",
-          description: "Get real-time signals, comprehensive analysis, and personalized trading strategies.",
-        },
-        {
-          icon: Brain,
-          title: "Make Data-Driven Decisions",
-          description: "Eliminate emotional trading with AI-powered insights and objective market analysis.",
-        },
-        {
-          icon: TrendingUp,
-          title: "Optimize Your Results",
-          description: "Continuously improve your trading performance with AI assistance and daily learning.",
+          title: "Visual references",
+          description: "Charts, indicators, and illustrations to help you understand concepts visually.",
         },
       ],
     },
     es: {
       title: "Cómo Funciona",
-      subtitle: "Comienza con Trading Pro GPT en 5 pasos simples",
+      subtitle: "Aprende sobre los mercados en 4 pasos simples",
       steps: [
         {
-          icon: LogIn,
-          title: "Ingresa a Trading Pro GPT",
-          description: "Haz clic en el enlace y comienza tu viaje de trading con IA al instante.",
+          icon: MessageSquare,
+          title: "Pregunta en lenguaje natural",
+          description:
+            '"Explica la tendencia en EUR/USD" • "¿Qué me dice el RSI en este escenario?" • "¿Cómo afecta la volatilidad al movimiento del precio?"',
         },
         {
-          icon: Target,
-          title: "Elige tu Mercado",
-          description: "Selecciona entre mercados de Acciones, Forex o Cripto según tus preferencias de trading.",
+          icon: Database,
+          title: "La IA analiza datos en tiempo real",
+          description: "El sistema obtiene información actualizada del mercado y proporciona insights educativos.",
+        },
+        {
+          icon: BookOpen,
+          title: "Aprende de las explicaciones",
+          description: "Desgloses claros, estructurados y amigables para principiantes de conceptos del mercado.",
         },
         {
           icon: BarChart3,
-          title: "Recibe Análisis Personalizado",
-          description: "Obtén señales en tiempo real, análisis integral y estrategias de trading personalizadas.",
-        },
-        {
-          icon: Brain,
-          title: "Toma Decisiones Basadas en Datos",
-          description: "Elimina el trading emocional con insights de IA y análisis objetivo del mercado.",
-        },
-        {
-          icon: TrendingUp,
-          title: "Optimiza tus Resultados",
-          description: "Mejora continuamente tu rendimiento de trading con asistencia IA y aprendizaje diario.",
+          title: "Referencias visuales",
+          description: "Gráficos, indicadores e ilustraciones para ayudarte a comprender conceptos visualmente.",
         },
       ],
     },

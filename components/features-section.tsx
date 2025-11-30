@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Zap, BarChart3, Brain, Smartphone, Database, Headphones, Users, Shield, Settings, Globe } from "lucide-react"
+import { TrendingUp, BarChart3, Brain, Eye, Database, FileUp } from "lucide-react"
 
 interface FeaturesSectionProps {
   lang: string
@@ -8,117 +8,79 @@ interface FeaturesSectionProps {
 export function FeaturesSection({ lang }: FeaturesSectionProps) {
   const content = {
     en: {
-      title: "Powerful Features",
-      subtitle: "Everything you need for successful AI-powered trading",
+      title: "What You Can Do With It",
+      subtitle: "Educational Use Only",
       features: [
         {
-          icon: Zap,
-          title: "Real-Time Automated Signals",
-          description: "Customizable automatic signals that adapt to your trading style and risk preferences.",
+          icon: TrendingUp,
+          title: "Explore market trends in real time",
+          description: "Understand how price movements form, how volatility changes, and how indicators react.",
         },
         {
           icon: BarChart3,
-          title: "Advanced Technical & Fundamental Analysis",
-          description: "Comprehensive market analysis combining technical indicators with fundamental data.",
+          title: "Learn how technical indicators work",
+          description:
+            "RSI, MACD, Bollinger Bands, EMAs, volume, volatility metrics — explained in a clear, educational way.",
         },
         {
           icon: Brain,
-          title: "Integrated AI Strategies",
-          description: "Adjustable AI-powered strategies that learn from market patterns and your preferences.",
+          title: "Study market conditions with AI explanations",
+          description: "Ask questions in natural language and receive structured educational insights.",
         },
         {
-          icon: Smartphone,
-          title: "Intuitive & Responsive Interface",
-          description: "User-friendly design that works seamlessly across all devices and platforms.",
+          icon: Eye,
+          title: "Visualize charts and patterns",
+          description: "See price data represented visually so you can better understand market dynamics.",
+        },
+        {
+          icon: FileUp,
+          title: "Upload your own market data",
+          description: "Analyze CSV files for learning and research purposes.",
         },
         {
           icon: Database,
-          title: "TwelveData Live Integration",
-          description: "Professional-grade real-time market data from trusted financial data providers.",
-        },
-        {
-          icon: Headphones,
-          title: "24/7 Human Support",
-          description: "Dedicated support team and easy onboarding to get you started quickly.",
-        },
-        {
-          icon: Users,
-          title: "Community & Collaborative Learning",
-          description: "Join a community of traders sharing insights and learning together.",
-        },
-        {
-          icon: Settings,
-          title: "All Experience Levels",
-          description: "Designed for everyone from complete beginners to advanced professional traders.",
-        },
-        {
-          icon: Shield,
-          title: "International Security & Privacy",
-          description: "Your data is protected under international security and privacy standards.",
-        },
-        {
-          icon: Globe,
-          title: "Multi-Market Integration Ready",
-          description: "Prepared for integration with additional markets and trading tools as we expand.",
+          title: "Improve your financial literacy",
+          description: "Understand concepts like trends, breakouts, support/resistance, risk principles, and more.",
         },
       ],
     },
     es: {
-      title: "Características Poderosas",
-      subtitle: "Todo lo que necesitas para un trading exitoso con IA",
+      title: "Qué Puedes Hacer Con Esta Herramienta",
+      subtitle: "Solo Uso Educativo",
       features: [
         {
-          icon: Zap,
-          title: "Señales Automáticas en Tiempo Real",
+          icon: TrendingUp,
+          title: "Explora tendencias del mercado en tiempo real",
           description:
-            "Señales automáticas personalizables que se adaptan a tu estilo de trading y preferencias de riesgo.",
+            "Comprende cómo se forman los movimientos de precios, cómo cambia la volatilidad y cómo reaccionan los indicadores.",
         },
         {
           icon: BarChart3,
-          title: "Análisis Técnico y Fundamental Avanzado",
-          description: "Análisis integral del mercado combinando indicadores técnicos con datos fundamentales.",
+          title: "Aprende cómo funcionan los indicadores técnicos",
+          description:
+            "RSI, MACD, Bandas de Bollinger, EMAs, volumen, métricas de volatilidad — explicados de forma clara y educativa.",
         },
         {
           icon: Brain,
-          title: "Estrategias IA Integradas",
-          description:
-            "Estrategias impulsadas por IA ajustables que aprenden de patrones del mercado y tus preferencias.",
+          title: "Estudia las condiciones del mercado con explicaciones IA",
+          description: "Haz preguntas en lenguaje natural y recibe insights educativos estructurados.",
         },
         {
-          icon: Smartphone,
-          title: "Interfaz Intuitiva y Responsive",
-          description: "Diseño amigable que funciona perfectamente en todos los dispositivos y plataformas.",
+          icon: Eye,
+          title: "Visualiza gráficos y patrones",
+          description:
+            "Ve los datos de precios representados visualmente para comprender mejor la dinámica del mercado.",
+        },
+        {
+          icon: FileUp,
+          title: "Sube tus propios datos de mercado",
+          description: "Analiza archivos CSV con fines de aprendizaje e investigación.",
         },
         {
           icon: Database,
-          title: "Integración en Vivo TwelveData",
-          description: "Datos de mercado en tiempo real de grado profesional de proveedores financieros confiables.",
-        },
-        {
-          icon: Headphones,
-          title: "Soporte Humano 24/7",
-          description: "Equipo de soporte dedicado y onboarding fácil para comenzar rápidamente.",
-        },
-        {
-          icon: Users,
-          title: "Comunidad y Aprendizaje Colaborativo",
-          description: "Únete a una comunidad de traders compartiendo insights y aprendiendo juntos.",
-        },
-        {
-          icon: Settings,
-          title: "Todos los Niveles de Experiencia",
-          description: "Diseñado para todos, desde principiantes completos hasta traders profesionales avanzados.",
-        },
-        {
-          icon: Shield,
-          title: "Seguridad y Privacidad Internacional",
-          description: "Tus datos están protegidos bajo estándares internacionales de seguridad y privacidad.",
-        },
-        {
-          icon: Globe,
-          title: "Listo para Integración Multi-Mercado",
+          title: "Mejora tu educación financiera",
           description:
-            "Preparado para integración con mercados adicionales y herramientas de trading mientras expandimos.",
+            "Comprende conceptos como tendencias, rupturas, soporte/resistencia, principios de riesgo y más.",
         },
       ],
     },
