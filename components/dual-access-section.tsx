@@ -1,11 +1,34 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Check } from "lucide-react"
+import { Check, TrendingUp, DollarSign, Bitcoin, BarChart3, Gem } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 interface DualAccessSectionProps {
   lang: string
+}
+
+const supportedAssets = {
+  en: {
+    title: "Supported Assets",
+    assets: [
+      { name: "Stocks", count: "160,000+ symbols", icon: TrendingUp, color: "text-emerald-400 bg-emerald-400/20" },
+      { name: "Forex", count: "2,000+ pairs", icon: DollarSign, color: "text-pink-400 bg-pink-400/20" },
+      { name: "Crypto", count: "4,800+ pairs", icon: Bitcoin, color: "text-blue-400 bg-blue-400/20" },
+      { name: "ETFs", count: "25,000+ symbols", icon: BarChart3, color: "text-red-400 bg-red-400/20" },
+      { name: "Commodities", count: "60+ symbols", icon: Gem, color: "text-fuchsia-400 bg-fuchsia-400/20" },
+    ],
+  },
+  es: {
+    title: "Activos Soportados",
+    assets: [
+      { name: "Acciones", count: "160,000+ símbolos", icon: TrendingUp, color: "text-emerald-400 bg-emerald-400/20" },
+      { name: "Forex", count: "2,000+ pares", icon: DollarSign, color: "text-pink-400 bg-pink-400/20" },
+      { name: "Crypto", count: "4,800+ pares", icon: Bitcoin, color: "text-blue-400 bg-blue-400/20" },
+      { name: "ETFs", count: "25,000+ símbolos", icon: BarChart3, color: "text-red-400 bg-red-400/20" },
+      { name: "Commodities", count: "60+ símbolos", icon: Gem, color: "text-fuchsia-400 bg-fuchsia-400/20" },
+    ],
+  },
 }
 
 export function DualAccessSection({ lang }: DualAccessSectionProps) {
@@ -87,6 +110,7 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
   }
 
   const t = content[lang as keyof typeof content] || content.en
+  const assets = supportedAssets[lang as keyof typeof supportedAssets] || supportedAssets.en
 
   return (
     <section className="py-20 bg-gradient-to-b from-[#1B123F]/20 to-[#0D0D0D]">
@@ -94,6 +118,24 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">{t.title}</h2>
           <p className="text-xl text-[#8B3BC0] font-semibold">{t.subtitle}</p>
+        </div>
+
+        <div className="max-w-4xl mx-auto mb-16">
+          <h3 className="text-xl font-semibold text-white text-center mb-6">{assets.title}</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+            {assets.assets.map((asset, index) => (
+              <div
+                key={index}
+                className="bg-[#1B123F]/30 border border-[#331659] rounded-xl p-4 text-center hover:border-[#8B3BC0]/50 transition-all duration-300"
+              >
+                <div className={`w-12 h-12 rounded-full ${asset.color} flex items-center justify-center mx-auto mb-3`}>
+                  <asset.icon className="h-6 w-6" />
+                </div>
+                <p className="font-semibold text-white">{asset.name}</p>
+                <p className="text-sm text-gray-400">{asset.count}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="max-w-5xl mx-auto">

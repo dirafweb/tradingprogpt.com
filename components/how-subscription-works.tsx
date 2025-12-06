@@ -16,7 +16,7 @@ export function HowSubscriptionWorks({ lang }: HowSubscriptionWorksProps) {
         {
           number: "1",
           title: "Choose Your Plan",
-          description: "Basic ($50/month) or Enterprise Business ($300/month with everything included)",
+          description: "Basic ($100/month) or Enterprise Business ($300/month with everything included)",
           icon: DollarSign,
         },
         {
@@ -44,7 +44,7 @@ export function HowSubscriptionWorks({ lang }: HowSubscriptionWorksProps) {
         {
           number: "1",
           title: "Elige Tu Plan",
-          description: "Básico ($50/mes) o Enterprise Business ($300/mes con todo incluido)",
+          description: "Básico ($100/mes) o Enterprise Business ($300/mes con todo incluido)",
           icon: DollarSign,
         },
         {
