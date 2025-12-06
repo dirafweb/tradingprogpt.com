@@ -12,21 +12,21 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
   const content = {
     en: {
       title: "Choose Your Plan",
-      subtitle: "Select the option that best fits your trading needs",
+      subtitle: "Select the option that best fits your learning needs",
       basicPlan: {
         badge: "Basic Plan",
-        price: "$50 USD/month",
-        title: "Trading Pro GPT",
-        description: "For traders who already have OpenAI Plus",
+        price: "$100 USD/month",
+        title: "ChatGPT Enterprise GPT",
+        subtitle: "Forex & Crypto Actions",
+        description: "Educational tool for Forex and Cryptocurrency markets",
         features: [
           "Full access to Trading Pro GPT",
-          "Real-time signals & analysis",
-          "All technical indicators",
-          "Personalized strategies",
+          "Forex market education",
+          "Cryptocurrency learning tools",
+          "Technical indicators explained",
           "Standard support",
         ],
-        note: "Requires separate OpenAI Plus subscription ($20/month)",
-        totalNote: "Total with OpenAI Plus: $70/month",
+        note: "No additional subscriptions needed",
         cta: "Get Basic Plan",
       },
       enterprisePlan: {
@@ -39,7 +39,7 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
           "OpenAI Enterprise included",
           "Full access to Trading Pro GPT",
           "Professional education & training",
-          "Real-time signals & analysis",
+          "Forex & Crypto + Stocks education",
           "All technical indicators",
           "Priority 24/7 support",
         ],
@@ -49,21 +49,21 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
     },
     es: {
       title: "Elige Tu Plan",
-      subtitle: "Selecciona la opción que mejor se adapte a tus necesidades de trading",
+      subtitle: "Selecciona la opción que mejor se adapte a tus necesidades de aprendizaje",
       basicPlan: {
         badge: "Plan Básico",
-        price: "$50 USD/mes",
-        title: "Trading Pro GPT",
-        description: "Para traders que ya tienen OpenAI Plus",
+        price: "$100 USD/mes",
+        title: "ChatGPT Enterprise GPT",
+        subtitle: "Acciones Forex y Crypto",
+        description: "Herramienta educativa para mercados Forex y Criptomonedas",
         features: [
           "Acceso completo a Trading Pro GPT",
-          "Señales y análisis en tiempo real",
-          "Todos los indicadores técnicos",
-          "Estrategias personalizadas",
+          "Educación en mercado Forex",
+          "Herramientas de aprendizaje Crypto",
+          "Indicadores técnicos explicados",
           "Soporte estándar",
         ],
-        note: "Requiere suscripción separada de OpenAI Plus ($20/mes)",
-        totalNote: "Total con OpenAI Plus: $70/mes",
+        note: "No necesitas suscripciones adicionales",
         cta: "Obtener Plan Básico",
       },
       enterprisePlan: {
@@ -76,7 +76,7 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
           "OpenAI Enterprise incluido",
           "Acceso completo a Trading Pro GPT",
           "Educación y formación profesional",
-          "Señales y análisis en tiempo real",
+          "Forex & Crypto + Acciones educación",
           "Todos los indicadores técnicos",
           "Soporte prioritario 24/7",
         ],
@@ -105,7 +105,8 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
                 <div className="mb-6">
                   <span className="text-4xl font-bold text-white">{t.basicPlan.price}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">{t.basicPlan.title}</h3>
+                <h3 className="text-2xl font-bold text-white mb-1">{t.basicPlan.title}</h3>
+                <p className="text-[#8B3BC0] font-semibold mb-2">{t.basicPlan.subtitle}</p>
                 <p className="text-gray-400 mb-6">{t.basicPlan.description}</p>
 
                 <ul className="space-y-3 mb-6">
@@ -118,15 +119,11 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
                 </ul>
 
                 <div className="bg-[#0D0D0D]/50 rounded-lg p-4 mb-6">
-                  <p className="text-sm text-gray-400">{t.basicPlan.note}</p>
-                  <p className="text-sm text-[#8B3BC0] font-semibold mt-1">{t.basicPlan.totalNote}</p>
+                  <p className="text-sm text-gray-300">{t.basicPlan.note}</p>
                 </div>
 
                 <Button asChild className="w-full bg-[#331659] hover:bg-[#331659]/80 text-white">
-                  <Link
-                    href="https://chatgpt.com/g/g-Apjq2CgWQ-trading-pro-gpt-trading-signals-insights"
-                    target="_blank"
-                  >
+                  <Link href="https://buy.stripe.com/8x25kDa6UfMe56obQPgbm01" target="_blank">
                     {t.basicPlan.cta}
                   </Link>
                 </Button>
@@ -160,10 +157,7 @@ export function DualAccessSection({ lang }: DualAccessSectionProps) {
                 </div>
 
                 <Button asChild className="w-full bg-[#8B3BC0] hover:bg-[#8B3BC0]/80 text-white font-bold">
-                  <Link
-                    href="https://chatgpt.com/g/g-Apjq2CgWQ-trading-pro-gpt-trading-signals-insights"
-                    target="_blank"
-                  >
+                  <Link href="https://buy.stripe.com/8x23cvena8jM8iAg75gbm00" target="_blank">
                     {t.enterprisePlan.cta}
                   </Link>
                 </Button>

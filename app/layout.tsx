@@ -4,19 +4,15 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
-import { Inter, Source_Serif_4 as V0_Font_Source_Serif_4 } from "next/font/google"
+import { Inter, Source_Serif_4, JetBrains_Mono } from "next/font/google"
 
-const _sourceSerif_4 = V0_Font_Source_Serif_4({
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--v0-font-source-serif-4",
+  variable: "--font-serif",
 })
-
-const _v0_fontVariables = `${GeistSans.variable} ${GeistMono.variable} ${_sourceSerif_4.variable}`
-
-const inter = Inter({ subsets: ["latin"] })
+const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
   title: "Trading Pro GPT - AI Trading Signals & Insights | Enterprise Business",
@@ -140,7 +136,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className + " " + _v0_fontVariables}>
+      <body className={`${inter.variable} ${sourceSerif.variable} ${jetbrainsMono.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>

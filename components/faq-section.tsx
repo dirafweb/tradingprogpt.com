@@ -38,17 +38,17 @@ export function FAQSection({ lang }: FAQSectionProps) {
         {
           question: "What are the pricing options?",
           answer:
-            "We offer two plans: Basic Plan at $50 USD/month (requires your own OpenAI Plus subscription at $20/month) for standard educational features, and Enterprise Business at $300 USD/month (includes OpenAI Enterprise and professional education modules) for complete access.",
+            "We offer two plans: Basic Plan at $100 USD/month (ChatGPT Enterprise GPT for Forex & Crypto, requires your own OpenAI Plus subscription at $20/month), and Enterprise Business at $300 USD/month (includes OpenAI Enterprise and professional education for all markets) for complete access.",
         },
         {
-          question: "What's included in the Basic Plan ($50/month)?",
+          question: "What's included in the Basic Plan ($100/month)?",
           answer:
-            "The Basic Plan includes full access to Trading Pro GPT educational features, real-time data visualization, indicator explanations, and standard support. Requires a separate OpenAI Plus subscription ($20/month).",
+            "The Basic Plan (ChatGPT Enterprise GPT - Forex & Crypto Actions) includes full access to Trading Pro GPT educational features for Forex and Cryptocurrency markets, real-time data visualization, indicator explanations, and standard support. Requires a separate OpenAI Plus subscription ($20/month). Total: $120/month.",
         },
         {
           question: "What's included in the Enterprise Business Plan ($300/month)?",
           answer:
-            "The Enterprise Business Plan includes: OpenAI Enterprise access (no separate subscription needed), all educational features, professional learning modules and resources, advanced data analysis tools, and priority 24/7 support.",
+            "The Enterprise Business Plan includes: OpenAI Enterprise access (no separate subscription needed), all educational features for Stocks, Forex & Crypto, professional learning modules and resources, advanced data analysis tools, and priority 24/7 support.",
         },
         {
           question: "Can I access it from mobile and desktop?",
@@ -94,17 +94,17 @@ export function FAQSection({ lang }: FAQSectionProps) {
         {
           question: "¿Cuáles son las opciones de precios?",
           answer:
-            "Ofrecemos dos planes: Plan Básico a $50 USD/mes (requiere tu propia suscripción de OpenAI Plus a $20/mes) para funciones educativas estándar, y Enterprise Business a $300 USD/mes (incluye OpenAI Enterprise y módulos de educación profesional) para acceso completo.",
+            "Ofrecemos dos planes: Plan Básico a $100 USD/mes (ChatGPT Enterprise GPT para Forex y Crypto, requiere tu propia suscripción de OpenAI Plus a $20/mes), y Enterprise Business a $300 USD/mes (incluye OpenAI Enterprise y educación profesional para todos los mercados) para acceso completo.",
         },
         {
-          question: "¿Qué incluye el Plan Básico ($50/mes)?",
+          question: "¿Qué incluye el Plan Básico ($100/mes)?",
           answer:
-            "El Plan Básico incluye acceso completo a las funciones educativas de Trading Pro GPT, visualización de datos en tiempo real, explicaciones de indicadores y soporte estándar. Requiere suscripción separada de OpenAI Plus ($20/mes).",
+            "El Plan Básico (ChatGPT Enterprise GPT - Acciones Forex y Crypto) incluye acceso completo a las funciones educativas de Trading Pro GPT para mercados Forex y Criptomonedas, visualización de datos en tiempo real, explicaciones de indicadores y soporte estándar. Requiere suscripción separada de OpenAI Plus ($20/mes). Total: $120/mes.",
         },
         {
           question: "¿Qué incluye el Plan Enterprise Business ($300/mes)?",
           answer:
-            "El Plan Enterprise Business incluye: acceso a OpenAI Enterprise (sin suscripción separada necesaria), todas las funciones educativas, módulos y recursos de aprendizaje profesional, herramientas avanzadas de análisis de datos y soporte prioritario 24/7.",
+            "El Plan Enterprise Business incluye: acceso a OpenAI Enterprise (sin suscripción separada necesaria), todas las funciones educativas para Acciones, Forex y Crypto, módulos y recursos de aprendizaje profesional, herramientas avanzadas de análisis de datos y soporte prioritario 24/7.",
         },
         {
           question: "¿Puedo acceder desde móvil y escritorio?",
