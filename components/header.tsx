@@ -16,13 +16,11 @@ export function Header({ lang }: HeaderProps) {
 
   const content = {
     en: {
-      goToApp: "Go to App",
       features: "Features",
       howItWorks: "How It Works",
       faq: "FAQ",
     },
     es: {
-      goToApp: "Ir a la aplicación",
       features: "Características",
       howItWorks: "Cómo funciona",
       faq: "Preguntas frecuentes",
@@ -61,14 +59,9 @@ export function Header({ lang }: HeaderProps) {
             </Link>
           </nav>
 
-          {/* Right side */}
+          {/* Right side - Removed Go to App button */}
           <div className="flex items-center space-x-4">
             <LanguageSelector currentLang={lang} />
-            <Button asChild className="bg-[#8B3BC0] hover:bg-[#8B3BC0]/80 text-white hidden md:inline-flex">
-              <Link href="https://chatgpt.com/g/g-Apjq2CgWQ-trading-pro-gpt-trading-signals-insights" target="_blank">
-                {t.goToApp}
-              </Link>
-            </Button>
 
             {/* Mobile menu button */}
             <Button
@@ -82,7 +75,7 @@ export function Header({ lang }: HeaderProps) {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - Removed Go to App button */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-[#331659]/20">
             <nav className="flex flex-col space-y-4 mt-4">
@@ -95,11 +88,6 @@ export function Header({ lang }: HeaderProps) {
               <Link href={`/${lang}#faq`} className="text-gray-300 hover:text-[#8B3BC0] transition-colors">
                 {t.faq}
               </Link>
-              <Button asChild className="bg-[#8B3BC0] hover:bg-[#8B3BC0]/80 text-white w-full">
-                <Link href="https://chatgpt.com/g/g-Apjq2CgWQ-trading-pro-gpt-trading-signals-insights" target="_blank">
-                  {t.goToApp}
-                </Link>
-              </Button>
             </nav>
           </div>
         )}
